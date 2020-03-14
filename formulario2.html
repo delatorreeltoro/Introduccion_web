@@ -6,8 +6,38 @@
     <title>Formulario2</title>
 </head>
 <body>
-    <form action="/introduccion_web/guardado.html" method="GET"></form>
+    <form action="/introduccion_web/guardado.html" method="GET">
+        <fieldset>
+        <legend>Nombre del formulario</legend>
+        <select name="carros" id="caros" required>
+        <option value="">Seleciona una marca</option>
+        <option value="volvo">Volvo</option>
+        <option value="bmw">BMW</option>
+        <option value="chevrolet">Chevrolet</option>
+        <option value="fiat">Fiat</option>
+    </select>
+    <br><br>
+    <select name="carros" id="caros" required>
+        <option value="">Seleciona una marca</option>
+        <option value="ford">Ford</option>
+        <option value="honda">Honda</option>
+        <option value="koenisengh">Koenisengh</option>
+        <option value="lambo">Lamborguini</option>
+    </select>
+    <br><br>
+    <label for="comentarios">Comentarios:</label>
+    <br><br>
+    <textarea name="comentarios" id="comentarios" cols="16" rows="7" placeholder="Escribe una opinion" required></textarea>
+    <br><br>
 
-    <label for="email">Email:</label>
+    <p>Selecciona una opcion</p> 
+    <input type="radio" id="hombre" name="genero" value="hombre">
+    <label for="hombre">Hombre</label>
+    <input type="radio" id="mujer" name="genero" value="mujer">
+    <label for="mujer">Mujer</label>
+    <br><br>
+    <input type="submit" value="Guardar">
+    </fieldset>
+    </form>
 </body>
 </html>
